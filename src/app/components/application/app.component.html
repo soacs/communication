@@ -1,0 +1,5 @@
+<div>
+  <input type="text" placeholder="Enter product (e.g. ipad)" (change)="onInputEvent($event)">
+  <br/> <br>{{productOrdered}}<br><br>
+  <order-processor [item]="product" quantity="2" (productOrdered)="onNotify($event)"></order-processor>
+</div>
